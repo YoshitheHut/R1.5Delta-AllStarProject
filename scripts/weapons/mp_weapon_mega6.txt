@@ -8,10 +8,9 @@ WeaponData
 	"weaponClass" 									"titan"
 	"server_vscript"  								"weapons/mp_titanweapon_gatling"
 	"client_vscript"  								"weapons/mp_titanweapon_gatling"
-	"minimap_reveal_distance"						"500"
-	//"fire_mode"   									"offhand_instant"//"offhand"
 	"pickup_hold_prompt"  							"Hold [USE] [WEAPONNAME]"
 	"pickup_press_prompt" 							"[USE] [WEAPONNAME]"
+	"minimap_reveal_distance"						"50000"
 
 	"damage_type" 									"bullet"
 
