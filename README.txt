@@ -7,4 +7,13 @@ I will be working on this for a bit.
 
 It acts like an addon, so just plug-n-play it.
 
+NOTICE:
+
+To launch another map in your private match you must press `
+type: launchplaylist coop; map mp_overlook
+
+launchplaylist is the mode
+map is well... the map
+this is just an example, you can replace coop with att or ttdm
+
 NOTE: only playable with people on the same version of R1Delta with you.
