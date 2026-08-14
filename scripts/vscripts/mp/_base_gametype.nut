@@ -2914,7 +2914,7 @@ function CodeCallback_OnClientConnectionCompleted( player )
 	InitPlayerStats( player )
 	InitPlayerChallenges( player )
 	UpdatePlayerDecalUnlocks( player, false )
-	ValidateCustomLoadouts( player )
+	//ValidateCustomLoadouts( player ) //no
 
 	if ( !player.IsBot() && !IsTrainingLevel() )
 	{
