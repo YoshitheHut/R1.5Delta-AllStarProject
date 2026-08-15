@@ -1640,7 +1640,7 @@ function OpenMenuWrapper( menu, focusDefault )
 			break
 
 		case "Addons":
-			OnOpenAddonsMenu(menu)
+			//OnOpenAddonsMenu(menu)
 			break
 
 		case "InGameMenu":
@@ -2063,7 +2063,7 @@ function CloseMenuWrapper( menu )
 			break;
 
 		case "Addons":
-			OnCloseAddonsMenu( menu )
+			//OnCloseAddonsMenu( menu )
 			break
 
 		case "HudSettingsMenu":

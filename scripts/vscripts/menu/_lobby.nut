@@ -216,7 +216,7 @@ function CodeCallback_OnClientConnectionCompleted( player )
 	InitBurnCards( player )
 	UpdatePlayerDecalUnlocks( player, false )
 	Ranked_PlayerConnected( player )
-	ValidateCustomLoadouts( player )
+	//ValidateCustomLoadouts( player )
 	SaveDateLoggedIn( player )
 
 	// set this persistent var if you are in mm debug mode, so you can see leagues.
