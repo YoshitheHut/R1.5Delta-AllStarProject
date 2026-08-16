@@ -1684,7 +1684,7 @@ function OpenMenuWrapper( menu, focusDefault )
 			break
 
 		case "BurnCards_InGame":
-			OnOpenMenu_BurnCardsInGame( menu )
+			//OnOpenMenu_BurnCardsInGame( menu )
 			break
 
 		case "BurnCards_filters":
@@ -1952,7 +1952,7 @@ function CloseMenuWrapper( menu )
 			break
 
 		case "BurnCards_InGame":
-			OnCloseMenu_BurnCardsInGame()
+			//OnCloseMenu_BurnCardsInGame()
 			break
 
 		case "BurnCards_pickcard":
