@@ -114,7 +114,7 @@ main()
 	stat_acceleration, # ui only
 	stat_health amount, # ui only
 	stat_boost count, # ui only
-	rodeo reference override, # can leave as just "" for default
+	rodeo reference override, # can leave as just "hijack" for default
 
 	titan model, # titan model
 	hatch model, # rodeo hatch

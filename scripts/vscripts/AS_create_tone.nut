@@ -35,7 +35,7 @@ function CreateTitan( offhand_override_data )
 		90, 
 		76, 
 		2, 
-		"", 
+		"hijack", 
 		TONE_MODEL, 
 		STRYDER_HATCH_PANEL, 
 		53, 
@@ -88,7 +88,7 @@ main()
 	stat_acceleration, # ui only
 	stat_health amount, # ui only
 	stat_boost count, # ui only
-	rodeo reference override, # can leave as just "" for default
+	rodeo reference override, # can leave as just "hijack" for default
 
 	titan model, # titan model
 	hatch model, # rodeo hatch
