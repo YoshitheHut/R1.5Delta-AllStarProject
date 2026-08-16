@@ -37,7 +37,7 @@ function CreateTitan( offhand_override_data )
 		20, 
 		100, 
 		1, 
-		"chest_focus", 
+		"chestfocus", 
 		LEGION_MODEL, 
 		STRYDER_HATCH_PANEL, 
 		53, 
