@@ -212,10 +212,10 @@ WeaponData
 
 		smart_rockets
 		{
-			"charge_cooldown_time"							"/2"
-			"ammo_stockpile_max"							"*5"
-			"ammo_clip_size"   								"*5"
-			"ammo_default_total"							"*5"
+			"charge_cooldown_time"							"/20"
+			"ammo_stockpile_max"							"-1"
+			"ammo_clip_size"   								"-1"
+			"ammo_default_total"							"-1"
 			"fire_rate"   									"*2"
 
 			"smart_ammo_search_angle" 						"*2"
