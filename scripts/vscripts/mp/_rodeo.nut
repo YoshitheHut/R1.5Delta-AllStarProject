@@ -1124,5 +1124,5 @@ function BMT_RodeoOverride( titan )
 		}
 	}
 
-	return titan.LookupAttachment( "hijack" )
+	return "hijack"
 }
