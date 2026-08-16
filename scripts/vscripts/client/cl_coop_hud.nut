@@ -893,7 +893,7 @@ function divindex_icon_anticrash( index )
 		case 12:
 		case 16:
 		case 20:
-			divindex = 4
+			divindex = 3
 			break
 		
 		default:
