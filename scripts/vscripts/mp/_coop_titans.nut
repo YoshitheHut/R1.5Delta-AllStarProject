@@ -203,7 +203,7 @@ function SetRandomWeaponOnTitanTemplate( table, randomMod = false, useAmpedWeapo
 			break
 
 		case "titan_legion":
-			weapon = "mp_titanweapon_xo16"
+			weapon = "mp_titanweapon_meda6"
 			weaponMod = ["bullet_storm"]
 			break
 		
