@@ -857,7 +857,7 @@ function GetPlayerIconIndex( player )
 	Assert( index >= 0 )
 
 	if ( index > 3 )
-		return divindex_icon_anticrash( index )
+		return divindex_icon_anticrash( index + 1 )
 
 	return index
 }
