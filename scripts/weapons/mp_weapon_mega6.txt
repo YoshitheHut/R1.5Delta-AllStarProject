@@ -6,6 +6,7 @@ WeaponData
 	"description" 									"Titan Gatling Gun."
 	"longdesc"										"Heavy rapid fire titan gatling gun with a close range mode and long range mode."
 	"weaponClass" 									"titan"
+	"fire_mode"                                     "auto"
 	"server_vscript"  								"weapons/mp_titanweapon_gatling"
 	"client_vscript"  								"weapons/mp_titanweapon_gatling"
 	"pickup_hold_prompt"  							"Hold [USE] [WEAPONNAME]"

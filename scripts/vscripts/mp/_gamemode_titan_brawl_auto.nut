@@ -50,13 +50,19 @@ function TitanBrawlAuto_Init()
 
 
     // --- Seed pools under level.* (no :: globals) ---
-    level.autoTitanSettings <- ["titan_atlas", "titan_ogre", "titan_stryder"]
+    level.autoTitanSettings <- ["titan_atlas", "titan_ogre", "titan_stryder", "titan_legion", "titan_scorch", "titan_ion", "titan_northstar", "titan_ronin", "titan_tone"]
 
 	// Health values for each titan class
 	level.autoTitanHealthValues <- {
-		titan_atlas = 10000,
-		titan_ogre = 12500,
-		titan_stryder = 7500
+		titan_atlas = 8000,
+		titan_ogre = 11500,
+		titan_stryder = 5500,
+        titan_legion = 14000,
+        titan_scorch = 14000,
+        titan_ion = 8000,
+        titan_northstar = 3000,
+        titan_ronin = 3000,
+        titan_tone = 9250
 	}
 
 	level.autoTitanWeaponPool <- [
@@ -71,13 +77,13 @@ function TitanBrawlAuto_Init()
 
 	// Weapon mods pool for random loadouts
 	level.autoTitanWeaponMods <- {
-		mp_titanweapon_xo16 = ["accelerator", "extended_ammo"],
-		mp_titanweapon_40mm = ["burst", "extended_ammo"],
+		mp_titanweapon_xo16 = ["accelerator", "extended_ammo", "fast_reload"],
+		mp_titanweapon_40mm = ["burst", "extended_ammo", "fast_reload"],
 		mp_titanweapon_rocket_launcher = ["extended_ammo", "rapid_fire_missiles"],
-		mp_titanweapon_sniper = ["extended_ammo", "instant_shot"],
+		mp_titanweapon_sniper = ["extended_ammo", "instant_shot", "fast_reload"],
 		mp_titanweapon_triple_threat = ["extended_ammo", "mine_field"],
 		mp_titanweapon_arc_cannon = ["capacitor"],
-		mp_titanweapon_shotgun = []
+		mp_titanweapon_shotgun = ["full_burst"]
 	}
 
 	// Ordnance pool for random loadouts
@@ -90,13 +96,19 @@ function TitanBrawlAuto_Init()
 
     // Names from respawnKillInfected in _persistentdata.nut
 	level.autoTitanUnusedNames <- [
-		"HkySk8r187", "HkySk8r187_Dev", "Princess Cowboy", "Raukin", "RSPNCompONEnt",
+		"OnlyTBAGS", "Donutlord", "Echo", "Sigm@theOgre", "ShockStryder88", "ATLASATLASATLAS",
+        "mispeld", "Professional_AutoTitan", "AutoTitan the Grafted", "tITANrISE", "TangoTango7474",
+        "Missiles4Dayz", "KentuckyFriedStryders", "3OgresInATrenchCoat", "TheFatandtheFurious"
+	]
+	
+        /*
+        "HkySk8r187", "HkySk8r187_Dev", "Princess Cowboy", "Raukin", "RSPNCompONEnt",
 		"Doc Feffer", "zurishmy", "Monsterclip", "Swakdaddy", "BladeOfLegend",
 		"ZombieJolie", "DKo5", "REDKo5", "STEELES JUSTICE", "A559SSIN", "NBTBadMutha",
 		"rBadMofo", "Rayme", "RoBoTg", "MurderStein-dev", "chrish-re", "TheSpawnexe",
 		"Xehn", "fatmojo69", "rab7166", "TSUEnami", "RespawnBlade"
-	]
-	
+        */
+
 	ArrayRandomize( level.autoTitanUnusedNames )
 	level.autoTitanNamesByTeam <- {}
 	level.autoTitanNamesByTeam[TEAM_IMC] <- []

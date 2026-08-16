@@ -1635,14 +1635,15 @@ enum ePrivateMatchModes
 	wlts,
 	tdm,
 	mfd,
-	mfdp,
+	//mfdp,
 	ps,
 	scv,
 	ttdm,
-	tmfd,
-	tmfdp
+	ttdm_auto,
+	tmfd
+	//tmfdp
 }
-
+//nobody plays pro anyways
 
 
 enum eEventNotifications

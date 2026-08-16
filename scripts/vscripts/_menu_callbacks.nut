@@ -874,6 +874,8 @@ function GetPersistentTitanLoadout( player, isCustom, loadoutIndex )
 
 function SanitizeLoadoutProperties( player, loadoutType, loadoutIndex, loadout )
 {
+	return
+	/*
 	foreach ( property, value in loadout )
 	{
 		if ( loadoutType == "pilot" && !IsValidPilotLoadoutProperty( property ) )
@@ -894,6 +896,7 @@ function SanitizeLoadoutProperties( player, loadoutType, loadoutIndex, loadout )
 
 		file.hasInvalidLoadout = true
 	}
+	*/
 }
 
 function GetDefaultLoadoutPropertyValue( player, loadoutType, loadoutIndex, property )
@@ -965,7 +968,8 @@ function ValidateCustomLoadouts( player )
 		GetPersistentTitanLoadout( player, true, i )
 
 	if ( file.hasInvalidLoadout && !IsLobby() )
-		Remote.CallFunction_UI( player, "ServerCallback_LoadoutsUpdated" )
+		return
+		//Remote.CallFunction_UI( player, "ServerCallback_LoadoutsUpdated" )
 
 	file.hasInvalidLoadout = false
 }
