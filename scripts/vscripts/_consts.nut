@@ -1874,7 +1874,7 @@ const COOP_NEWENEMY_ANNOUNCE_CARD_ADD_DELAY 	= 0.4  // how long to wait between 
 const COOP_NEWENEMY_ANNOUNCE_CARD_REMOVE_DELAY 	= 0.1  // how long to wait between removing cards from the onscreen list
 
 // DEPRECATED this should be controlled with playlist variable
-const COOP_MAX_PLAYER_COUNT				= 4
+const COOP_MAX_PLAYER_COUNT				= 20
 const COOP_RESTARTS						= 2
 const COOP_RESTARTS_MP_RISE 			= 1
 

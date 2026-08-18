@@ -158,7 +158,9 @@ function SetRandomWeaponOnTitanTemplate( table, randomMod = false, useAmpedWeapo
 		"mp_titanweapon_rocket_launcher",
 		"mp_titanweapon_40mm",
 		"mp_titanweapon_xo16",
-		"mp_titanweapon_triple_threat"
+		"mp_titanweapon_triple_threat",
+		"mp_titanweapon_sniper",
+		"mp_titanweapon_shotgun"
 		]
 
 	local mods
@@ -169,6 +171,8 @@ function SetRandomWeaponOnTitanTemplate( table, randomMod = false, useAmpedWeapo
 		[ "burn_mod_titan_40mm" ],
 		[ "burn_mod_titan_xo16" ],
 		[ "burn_mod_titan_triple_threat" ],
+		[ "burn_mod_titan_sniper" ],
+		[ "auto_burst" ]
 		]
 	}
 	else
@@ -178,6 +182,8 @@ function SetRandomWeaponOnTitanTemplate( table, randomMod = false, useAmpedWeapo
 		[ "burst" ],
 		[ "extended_ammo" ],
 		[ "mine_field" ],
+		[ "instant_shot" ],
+		[ "full_burst" ]
 		]
 	}
 
@@ -186,7 +192,7 @@ function SetRandomWeaponOnTitanTemplate( table, randomMod = false, useAmpedWeapo
 
 	if ( randomMod )
 		weaponMod = [ Random( mods[ weapIndex ] ) ]
-	
+	/*
 	switch ( table.settings )
 	{
 		case "titan_ion":
@@ -203,7 +209,7 @@ function SetRandomWeaponOnTitanTemplate( table, randomMod = false, useAmpedWeapo
 			break
 
 		case "titan_legion":
-			weapon = "mp_titanweapon_meda6"
+			weapon = "mp_titanweapon_mega6"
 			weaponMod = ["bullet_storm"]
 			break
 		
@@ -217,7 +223,7 @@ function SetRandomWeaponOnTitanTemplate( table, randomMod = false, useAmpedWeapo
 			weaponMod = ["instant_shot"]
 			break
 	}
-
+	*/
 	table.weapon	= weapon
 	table.weaponMod = weaponMod
 }

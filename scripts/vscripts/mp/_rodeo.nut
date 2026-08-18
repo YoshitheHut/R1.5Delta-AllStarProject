@@ -255,11 +255,11 @@ function MoveToLegalSolidFromTitan( mover, titan )
 
 	Assert( mover.IsPlayer() )
 
-	local attachIndex = BMT_RodeoOverride( titan )//titan.LookupAttachment( "hijack" )
+	local attachment = BMT_RodeoOverride( titan )//titan.LookupAttachment( "hijack" )
 	//if ( GetSoulTitanType( titan.GetTitanSoul() ) == "special_ogre" )//modded
 		//attachIndex = titan.LookupAttachment( "chestfocus" )//chestfocus
 	
-
+	local attachIndex = titan.LookupAttachment
 
 	local start = titan.GetAttachmentOrigin( attachIndex )
 	local end = mover.GetOrigin()
