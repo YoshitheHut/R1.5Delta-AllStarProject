@@ -259,7 +259,7 @@ function MoveToLegalSolidFromTitan( mover, titan )
 	//if ( GetSoulTitanType( titan.GetTitanSoul() ) == "special_ogre" )//modded
 		//attachIndex = titan.LookupAttachment( "chestfocus" )//chestfocus
 	
-	local attachIndex = titan.LookupAttachment
+	local attachIndex = titan.LookupAttachment( attachment )
 
 	local start = titan.GetAttachmentOrigin( attachIndex )
 	local end = mover.GetOrigin()
