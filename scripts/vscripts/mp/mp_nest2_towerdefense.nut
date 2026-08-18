@@ -145,7 +145,7 @@ function nest2_AddWaveNames()
 	AddWaveName( "name_nest3", "Titan Activation" )
 	AddWaveName( "name_nest4", "Bullet Storm" )
 	AddWaveName( "name_nest5", "Missile Rain" )
-	AddWaveName( "name_nest6", "Smoke Screen" )
+	AddWaveName( "name_nest6", "Budget Issues" )
 	AddWaveName( "name_nest7", "Thunder Strikes" )
 	AddWaveName( "name_nest8", "Accelerating Fusion" )
 	AddWaveName( "name_nest9", "Final Hour" )// Yoshi was here
