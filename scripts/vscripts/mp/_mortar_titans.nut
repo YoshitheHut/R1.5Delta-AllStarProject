@@ -9,7 +9,7 @@ function SpawnMortarTitan( origin, angles, team )
 	table.title 	= "#NPC_TITAN_MORTAR"
 	table.origin 	= origin
 	table.angles 	= angles
-	table.settings  = Random( [ "titan_atlas", "titan_scorch" ] )
+	table.settings  = Random( [ "titan_atlas", "titan_tone" ] )
 
 	switch( table.settings )
 	{
@@ -19,8 +19,8 @@ function SpawnMortarTitan( origin, angles, team )
 			table.weaponMod = [ "rapid_fire_missiles" ]
 			break
 		
-		case "titan_scorch":
-			table.model 	= SCORCH_MODEL
+		case "titan_tone":
+			table.model 	= TONE_MODEL
 			table.weapon	= "mp_titanweapon_rocket_launcher"
 			table.weaponMod = [ "burn_mod_titan_rocket_launcher" ]
 			break
