@@ -4,8 +4,16 @@ const RANDOMIZE_BOT_LOADOUT	= 1
 
 const BASE_TITAN_COUNT = 4 //Adds 3 for titans and 1 to make a valid array placement
 ::MasterModdedTitans <- []
-::Titans_Enum_Placement <- 3
-
+//::Titans_Enum_Placement <- 3
+::ExpectedCustomScripts <- []
+/*
+::titanSetFile <- {
+	NULL = 0
+	titan_atlas = 1
+	titan_ogre = 2
+	titan_stryder = 3
+}
+*/
 const TESTCONST = 99
 const TEAM_ANY = -1
 const TEAM_INVALID = -1

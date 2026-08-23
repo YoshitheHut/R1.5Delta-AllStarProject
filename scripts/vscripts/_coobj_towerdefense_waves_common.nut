@@ -104,6 +104,11 @@ function Setup_Common_WaveNames()
 	AddWaveName( "name_nest8", "Accelerating Fusion" )
 	AddWaveName( "name_nest9", "Final Hour" )// Yoshi was here
 
+	AddWaveName( "name_mia1", "Split Focus" )
+	AddWaveName( "name_mia2", "Heat Rising" )
+	AddWaveName( "name_mia3", "Rain Drops" )
+	AddWaveName( "name_mia4", "Glassed" )// Yoshi was also here
+
 	/*
 	// WAVE ANNOUNCE VO - for LD reference, please do not remove -SRS
 	// - This is for when an LD wants to totally customize the wave announcement VO that plays at the start of a wave.
@@ -4910,3 +4915,21 @@ function CommonWave_NEST_Waves()
 	return wave
 }
 Globalize( CommonWave_NEST_Waves )
+
+
+function CommonWave_MIA_Waves()//Northwest is a lie, more like... South West ish? now i got the spawn routes mixed up...
+{
+	//wave 1:
+	local wave = TowerDefense_AddWave( "name_mia1" )
+	Wave_SetAnnounceVO( wave, "CoopTD_EnemyAnnounce_Titans" )
+	Wave_AddSpawn( wave, TD_SpawnTitan,	"troops1", null, "MIA_south_east" )
+	Wave_AddSpawn( wave, TD_SpawnTitan,	"troops1", null, "MIA_south_east" )
+	Wave_AddSpawn( wave, TD_SpawnTitan,	"troops2", null, "MIA_north_west" )
+	Wave_AddSpawn( wave, TD_SpawnTitan,	"troops2", null, "MIA_north_west" )
+
+	Wave_SetBreakTime( wave, 10 )
+
+
+	return wave
+}
+Globalize( CommonWave_MIA_Waves )

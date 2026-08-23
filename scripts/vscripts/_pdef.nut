@@ -35,8 +35,10 @@ function InitPersistence()
     AddPersistenceKey("haveSeenCustomCoop", "bool")
 
 	Globalize( add_setfile_persistance )
+	Globalize( add_setfile_persistance2 )
+	Globalize( add_setfile_pdef )
 
-	//IncludeFile( "Yoshi's_All-Stars" )
+	IncludeFile( "Yoshi's_All-Stars" )
 	//IncludeFile("Yoshi's_TitanCreator")
 
     ::gameModes <- {
@@ -235,18 +237,18 @@ function InitPersistence()
 
     AddPersistenceEnum("pilotMod", pilotMod)
 
-    ::titanSetFile <- {
-        NULL = 0
-	    titan_atlas = 1
-	    titan_ogre = 2
-	    titan_stryder = 3
-		//titan_legion = 4
-    }
+	::titanSetFile <- {
+		NULL = 0
+		titan_atlas = 1
+		titan_ogre = 2
+		titan_stryder = 3
+	}
+
+	add_setfile_persistance()
 
     AddPersistenceEnum("titanSetFile", titanSetFile)
 
-	IncludeFile( "Yoshi's_All-Stars" )
-	//IncludeFile("Yoshi's_TitanCreator")
+	//IncludeFile( "Yoshi's_All-Stars" )
 
 	//IncludeFile("Yoshi's_TitanCreator")
 
@@ -2201,10 +2203,46 @@ function testpdef() {
 		printt(k, PersistenceGetEnumItemNameForIndex("unlockRefs", k))
 }
 
-function add_setfile_persistance( file, placement )
+function add_setfile_pdef( setfile_ref )
+{
+	local loop_max = MasterModdedTitans.len()
+	for( local E = 0; E < loop_max; E++ )
+	{
+		if( loop_max > 0 )
+		{
+			local t_a = MasterModdedTitans[ E ]
+			
+			if ( t_a.setfile == setfile_ref )
+			{
+				local titan_integer = E + BASE_TITAN_COUNT
+
+				return titan_integer
+			}
+		}
+	}
+}
+
+function add_setfile_persistance2( file, placement )
 {
 	::titanSetFile[ file ] <- placement
-	printt(::titanSetFile)
+	//printt(::titanSetFile)
+}
+
+function add_setfile_persistance()
+{
+	local loop_max = MasterModdedTitans.len()
+	for( local E = 0; E < loop_max; E++ )
+	{
+		if( loop_max > 0 )
+		{
+			local t_a = MasterModdedTitans[ E ]
+
+			::titanSetFile[ t_a.setfile ] <- E + BASE_TITAN_COUNT
+
+			printl( ::titanSetFile )
+			
+		}
+	}
 }
 
 InitPersistence()
