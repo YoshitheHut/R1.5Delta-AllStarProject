@@ -242,9 +242,15 @@ function InitPersistence()
 		titan_atlas = 1
 		titan_ogre = 2
 		titan_stryder = 3
+		titan_legion = 4
+		titan_scorch = 5
+		titan_tone = 6
+		titan_ion = 7
+		titan_ronin = 8
+		titan_northstar = 9
 	}
 
-	add_setfile_persistance()
+	//add_setfile_persistance()
 
     AddPersistenceEnum("titanSetFile", titanSetFile)
 
