@@ -81,7 +81,7 @@ WeaponData
 	// Behavior
 	"ads_move_speed_scale"							"0.5"
 
-	"fire_rate"   									"20"
+	"fire_rate"   									"15"
 	"zoom_time_in"									"1.5"
 	"zoom_time_out"   								"1.5"
 	"zoom_fov"										"70"
@@ -112,11 +112,11 @@ WeaponData
 	"spread_stand_hip"								"8"
 	"spread_stand_hip_run"							"16.0"
 	"spread_stand_hip_sprint"                       "25"
-	"spread_stand_ads"								"1"
+	"spread_stand_ads"								"4"
 	"spread_crouch_hip"   							"4"
-	"spread_crouch_ads"   							"0.1"
+	"spread_crouch_ads"   							"2"
 	"spread_air_hip"  								"24.0"
-	"spread_air_ads"  								"4"
+	"spread_air_ads"  								"8"
 
 	"spread_npc"  									"1"
 
